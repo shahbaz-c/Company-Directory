@@ -1,0 +1,242 @@
+body {
+	overflow-x: hidden;
+	width: auto;
+}
+
+/* Navbar styling */
+.navbar {
+	background-color: #dfe0eb !important;
+}
+
+.border-bottom {
+	border-color: darkcyan !important;
+}
+
+#navbarToggler .btn {
+	margin-top: 15px;
+}
+
+#searchBar {
+	padding-top: 80px;
+}
+
+/* Hidden id tag for retireving Database IDs */
+#employeeID,
+#departmentID,
+#locationID,
+#delEmployeeID,
+#delDepartmentID,
+#delLocationID {
+	display: none;
+}
+
+/* Back to top button */
+#scrollButton {
+	display: inline-block;
+	background-color: #0d6efd;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 15px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+}
+#scrollButton::after {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f0d8';
+	font-style: normal;
+	font-size: 2.5em;
+	line-height: 50px;
+	color: #fff;
+}
+#scrollButton:hover {
+	cursor: pointer;
+	background-color: #333;
+	color: #333;
+}
+#scrollButton:active {
+	background-color: #555;
+}
+#scrollButton.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Main employee cards */
+.employee-profile {
+	padding: 80px 0;
+	padding-top: 20px;
+}
+
+.card {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	border-radius: 15px;
+}
+
+.profile-bg {
+	height: 175px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	width: 100%;
+	background-color: #3386ff;
+}
+
+.profile-img img {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	border: 7px solid #fff;
+	margin-top: -80px;
+}
+
+.card:hover .profile-img img {
+	border-color: darkcyan;
+	transition: 0.7s;
+}
+
+.employee-info {
+	padding: 30px 0;
+}
+
+.employee-info h2 {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 25px;
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+.employee-info #employeeLname {
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #212529;
+}
+
+.employee-info #employeeFname {
+	font-weight: 900;
+	text-transform: capitalize;
+}
+
+.employee-info h4 {
+	font-size: 16px;
+	padding: 0 50px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-weight: bold;
+}
+
+.employee-info span {
+	color: darkcyan;
+	font-weight: 500;
+}
+
+/* Set size of buttons */
+.edit-btn {
+	width: 81.05px;
+	height: 38px;
+}
+
+.save-btn {
+	width: 64.31px;
+	height: 38px;
+}
+
+/* Modal border radius */
+.modal-content,
+.modal-header {
+	border-radius: 15px !important;
+}
+
+/* Form labels */
+label {
+	font-weight: bold;
+}
+
+.asterix {
+	color: red;
+}
+
+.employeeCount,
+.deptCount {
+	color: red;
+}
+
+/* Button sizing */
+.loc-del,
+.dept-del {
+	width: 33.75px;
+	height: 31px;
+}
+
+/* Used in jQuery form submit */
+.confirm-employee-update {
+	display: none;
+}
+
+.confirm-dept-update {
+	display: none;
+}
+
+.confirm-loc-update {
+	display: none;
+}
+
+#updateemployeeBtn {
+	display: none;
+}
+
+#updateDeptBtn {
+	display: none;
+}
+
+#updateLocBtn {
+	display: none;
+}
+
+/* Preloader styling */
+.preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 99999999;
+	background-image: url('../../vendor/images/preloader.gif');
+	background-repeat: no-repeat;
+	background-color: #ffffff;
+	background-position: center;
+}
+
+/* Preloader */
+#stop-scrolling {
+	height: 100% !important;
+	overflow: hidden !important;
+}
+
+/* Media queries */
+@media only screen and (max-width: 472px) {
+	img#logo {
+		width: 278px;
+		height: 41px;
+	}
+}
+
+@media only screen and (max-width: 382px) {
+	img#logo {
+		width: 222px;
+		height: 33px;
+	}
+}
